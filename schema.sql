@@ -16,15 +16,15 @@ CREATE TABLE employee (
     REFERENCES employee(id)
 
 );
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Brenner", "Wolf", 218514, 2315);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Raymond", "Beasley", 251192, 1819);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Isaac", "Caulder", 312112, 9419);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Otto", "Morris", 131518, 6121);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Forsythe", "Knight", 615181, 1212);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Gage", "Sharp", 717500, 6211);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Sasha", "Bird", 191198, 8910);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Waylon", "Brothers", 231251, 1452);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Ruben", "Greyfield", 718525, 3118);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Brenner", "Wolf", 1, 1);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Raymond", "Beasley", 2, 1);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Isaac", "Caulder", 3, 1);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Otto", "Morris", 4, 1);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Forsythe", "Knight", 5, 1);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Gage", "Sharp", 4, 1);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Sasha", "Bird", 3, 1);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Waylon", "Brothers", 2, 1);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Ruben", "Greyfield", 1, 1);
 
 
 CREATE TABLE role (
