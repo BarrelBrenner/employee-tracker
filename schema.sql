@@ -16,15 +16,15 @@ CREATE TABLE employee (
     REFERENCES employee(id)
 
 );
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Brenner", "Wolf", 1, 1);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Raymond", "Beasley", 2, 1);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Isaac", "Caulder", 4, 1);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Otto", "Morris", 3, 1);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Forsythe", "Knight", 5, 1);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Gage", "Sharp", 2, 1);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Sasha", "Bird", 3, 1);
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Waylon", "Brothers", 1, 1 );
-INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Ruben", "Greyfield", 1, 1);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Brenner", "Wolf", 218514, 2315);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Raymond", "Beasley", 251192, 1819);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Isaac", "Caulder", 312112, 9419);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Otto", "Morris", 131518, 6121);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Forsythe", "Knight", 615181, 1212);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Gage", "Sharp", 717500, 6211);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Sasha", "Bird", 191198, 8910);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Waylon", "Brothers", 231251, 1452);
+INSERT INTO employee(first_name, last_name, job_id, leader_id) VALUES ("Ruben", "Greyfield", 718525, 3118);
 
 
 CREATE TABLE role (
@@ -36,11 +36,11 @@ CREATE TABLE role (
   -- FOREIGN KEY(branch_id)
   -- REFERENCES department(id)
 );
-insert into role(subtitle, rate, branch_id) values('Scientist', 5000000, 1);
-insert into role(subtitle, rate, branch_id) values('Guard', 1000000, 2);
-insert into role(subtitle, rate, branch_id) values('Trader', 4000000, 3);
-insert into role(subtitle, rate, branch_id) values('Technician', 3000000, 4);
-insert into role(subtitle, rate, branch_id) values('Boss', 2000000, 5);
+insert into role(subtitle, rate, branch_id) values('Scientist', 500000, 1);
+insert into role(subtitle, rate, branch_id) values('Guard', 350000, 2);
+insert into role(subtitle, rate, branch_id) values('Trader', 475000, 3);
+insert into role(subtitle, rate, branch_id) values('Technician', 225000, 4);
+insert into role(subtitle, rate, branch_id) values('Boss', 200000, 5);
 
 CREATE TABLE department (
   id INT NOT NULL AUTO_INCREMENT,

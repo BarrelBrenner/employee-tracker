@@ -159,9 +159,7 @@ function plusRookie() {
       let query = `INSERT INTO employee (first_name, last_name, job_id, leader_id)
      VALUES ('${answer.first}','${answer.last}','${getJobId[0]}','${getLeaderId[0]}')`;
       connection.query(query, function (err, res) {
-        console.log(
-          `Employee ${answer.first} ${answer.last} successfully joined the team!`
-        );
+        console.log(`------Employee ${answer.first} ${answer.last} successfully joined the team!------`);
       });
       runSearch();
     });
@@ -198,7 +196,7 @@ function plusAssign() {
       let query = `INSERT INTO role (subtitle, rate, branch_id)
    VALUES ('${answer.job}','${answer.rate}','${getBranchId[0]}')`;
       connection.query(query, function (err, res) {
-        console.log(`<br>-----new role of ${answer.job} successfully added!------`);
+        console.log(`------new role of ${answer.job} successfully added!------`);
       });
       runSearch();
     });
@@ -220,7 +218,7 @@ function plusSpecial() {
       let query = `INSERT INTO department (name)
    VALUES ('${answer.branch}')`;
       connection.query(query, function (err, res) {
-        console.log(`-------the following department has been successfully added: ${answer.branch}-------`);
+        console.log(`------the following department has been successfully added: ${answer.branch}------`);
       });
       runSearch();
     });
@@ -258,18 +256,18 @@ function designateAssign() {
                 choices: function () {
                   let roleArray = [];
                   res.forEach((res) => {
-                    roleArray.push(res.title);
+                    roleArray.push(res.subtitle);
                   });
                   return roleArray;
                 },
               },
             ])
-            .then(function (roleAnswer) {
-              const role = roleAnswer.role;
-              console.log(role);
+            .then(function (jobAnswer) {
+              const job = jobAnswer.job;
+              console.log(job);
               connection.query(
                 "SELECT * FROM role WHERE subtitle = ?",
-                [role],
+                [job],
                 function (err, res) {
                   if (err) throw err;
                   let jobId = res[0].id;
@@ -278,7 +276,7 @@ function designateAssign() {
                   let values = [parseInt(jobId), name];
 
                   connection.query(query, values, function (err, res, fields) {
-                    console.log(`Success! Updated ${name}'s role to ${role}.`);
+                    console.log(`Success! Updated ${name}'s role to ${job}.`);
                   });
                   teamRoster();
                 }
