@@ -20,6 +20,6 @@ New Occupation helps you add a new job to a new or existing branch.
 
 Adjust Occupation updates employees status.
 
-Video for walk-through is located here -- 
+Video for walk-through is located here -- https://drive.google.com/file/d/1QBA2jvdnAVQczTm4qBcCDg7n3QjFcYf9/view
 
 Thank you for your time & take care.
